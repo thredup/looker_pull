@@ -6,6 +6,7 @@ module LookerPull
     attr_accessor :data_headers, :data_rows, :looker_query_utility, :filepath, :query_result, :formatter, :options
 
     def initialize(q, options = {})
+      q = CGI.unescape(q)
       self.options = options
       self.logger = options[:logger]
       self.formatter = options[:formatter]
@@ -31,7 +32,7 @@ module LookerPull
       total_rows_count = 0
       max_rows = options[:max_rows]
 
-      while continue && (!max_rows || max_rows > total_rows_count)
+      while continue && (!max_rows || max_rows > total_rows_count) && (!options[:single_pull] || next_id == 0)
         self.looker_query_utility.set_paging_by_sorts_filter(next_id)  
         self.looker_query_utility.run
 
