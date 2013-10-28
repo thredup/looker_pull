@@ -44,10 +44,9 @@ module LookerPull
           self.data_headers = self.query_result.fields
           self.data_rows = d
 
-
           save_headers_to_local_file_via_append if next_id == 0
 
-          formatter.format_data_rows(data_rows,data_headers) if formatter
+          formatter.format_data_rows(data_rows,data_headers.map{|h| h["name"]}) if formatter
 
           save_to_local_file_via_append
           

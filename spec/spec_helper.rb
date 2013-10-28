@@ -2,7 +2,7 @@ require "looker_pull"
 require 'vcr'
 
 LOOKER = {
-  host: "looker.example.com",
+  host: "looker.thredup.com",
   port: 9998,
   token: "nfjnfjjfnjfnrmSoQ5K2Q",
   secret: "djnjsdnjndjndjlaoru31ef9IvtgEHkBjiBfvZ"
