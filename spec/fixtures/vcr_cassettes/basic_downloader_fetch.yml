@@ -1,0 +1,93 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://looker.thredup.com:9998/api/dictionaries/thredup/queries/items.json?fields=items_id,items_concierge_bag_id,orders_id,items_gender,items_is_juniors,items_purchased,items_listed_now,items_listed_ever,items_in_inventory,items_no_longer_in_inventory,current_state_min_date,items_listed_date,items_purchased_date,items_price,items_category_id,items_brand_id,items_product_id,items_location,items_state,items_created_date,items_upfront_payout,items_photographer_name,items_photo_station_name,items_itemizer_name,items_sorter_name,items_views,items_original_item_id,items_new_with_tags,items_packer_name,sizings_id,items_quality_code,items_reason,items_refund_reason,item_prices_original_price,item_prices_msrp&filters%5Bitems_id%5D=0%20to&limit=5&sorts=items_id
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Date:
+      - Sun, 27 Oct 2013 13:38:40 -0700
+      X-Llooker-Nonce:
+      - !binary |-
+        OGFiZTJjOTkzZTBiNjk3MjE4N2RhZDY2Y2Y3NGYyOGY=
+      X-Llooker-Api-Version:
+      - 1
+      Authorization:
+      - vKhT62dw267SjrmSoQ5K2Q:02LEVmz9DJGewryLX4LdRcwFjO4=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Connection:
+      - close
+      Set-Cookie:
+      - rack.session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRiJFZTU5OGMzZjZjYjVmZTA2MTM2NzE2%0ANTJmYjAzNmFkMmYzZTcwMWE4ODMzMTlhMjU3YjQwMDA2ODM0Y2Y5OWExYkki%0AD2NzcmYudG9rZW4GOwBGSSIxK21SL0d5NlptcEM4V25zNWRxVzIvVEF4SEVk%0AcDdiWXhNbS9uS2UzeWx5RT0GOwBG%0A--23289523ced5a3d94405074c914f5398befb5f33;
+        path=/; HttpOnly; secure
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '2124'
+    body:
+      encoding: US-ASCII
+      string: ! '{"fields":[{"name":"items_id"},{"name":"items_concierge_bag_id"},{"name":"orders_id"},{"name":"items_gender"},{"name":"items_is_juniors"},{"name":"items_purchased"},{"name":"items_listed_now"},{"name":"items_listed_ever"},{"name":"items_in_inventory"},{"name":"items_no_longer_in_inventory"},{"name":"current_state_min_date"},{"name":"items_listed_date"},{"name":"items_purchased_date"},{"name":"items_price"},{"name":"items_category_id"},{"name":"items_brand_id"},{"name":"items_product_id"},{"name":"items_location"},{"name":"items_state"},{"name":"items_created_date"},{"name":"items_upfront_payout"},{"name":"items_photographer_name"},{"name":"items_photo_station_name"},{"name":"items_itemizer_name"},{"name":"items_sorter_name"},{"name":"items_views"},{"name":"items_original_item_id"},{"name":"items_new_with_tags"},{"name":"items_packer_name"},{"name":"sizings_id"},{"name":"items_quality_code"},{"name":"items_reason"},{"name":"items_refund_reason"},{"name":"item_prices_original_price"},{"name":"item_prices_msrp"}],"data":[[4.0,0.0,195780.0,"girls","No","Yes","No","Yes","No","No","2012-02-20","2012-02-07","2012-02-10",549.0,72.0,192.0,48.0,"","received","2012-04-09",0.0,null,null,null,null,116.0,null,0,null,33,"Q1",null,null,null,null],[9.0,0.0,null,"boys","No","No","No","No","No","Yes",null,null,null,599.0,42.0,113.0,49.0,"00-001","soft_destroyed","2012-01-17",0.0,null,null,null,null,5.0,null,0,null,74,"Q1",null,null,null,null],[10.0,0.0,208670.0,"boys","No","Yes","No","Yes","No","No","2012-03-30","2012-02-07","2012-03-24",399.0,8.0,593.0,45.0,"","received","2012-04-09",0.0,null,null,null,null,135.0,null,0,null,93,"Q1",null,null,null,null],[12.0,0.0,194766.0,"girls","No","Yes","No","Yes","No","No","2012-02-20","2012-02-07","2012-02-08",249.0,145.0,278.0,42.0,"","received","2012-04-09",0.0,null,null,null,null,87.0,null,0,null,21,"Q1",null,null,null,null],[14.0,0.0,201278.0,"girls","No","Yes","No","Yes","No","No","2012-03-06","2012-02-07","2012-02-28",349.0,44.0,1092.0,44.0,"00-005","received","2012-01-17",0.0,null,null,null,null,45.0,null,0,null,17,"Q1",null,null,null,null]],"truncated":true}'
+    http_version: 
+  recorded_at: Sun, 27 Oct 2013 20:38:41 GMT
+- request:
+    method: get
+    uri: https://looker.thredup.com:9998/api/dictionaries/thredup/queries/items.json?fields=items_id,items_concierge_bag_id,orders_id,items_gender,items_is_juniors,items_purchased,items_listed_now,items_listed_ever,items_in_inventory,items_no_longer_in_inventory,current_state_min_date,items_listed_date,items_purchased_date,items_price,items_category_id,items_brand_id,items_product_id,items_location,items_state,items_created_date,items_upfront_payout,items_photographer_name,items_photo_station_name,items_itemizer_name,items_sorter_name,items_views,items_original_item_id,items_new_with_tags,items_packer_name,sizings_id,items_quality_code,items_reason,items_refund_reason,item_prices_original_price,item_prices_msrp&filters%5Bitems_id%5D=15%20to&limit=5&sorts=items_id
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Date:
+      - Sun, 27 Oct 2013 16:09:37 -0700
+      X-Llooker-Nonce:
+      - !binary |-
+        OTQ2ZDUwYTdiOWI1MTNlNTE3NjFhZTQwYzkxNTY5MmM=
+      X-Llooker-Api-Version:
+      - 1
+      Authorization:
+      - vKhT62dw267SjrmSoQ5K2Q:V9Z98nJqNao6nW+zs377gRgJI14=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Connection:
+      - close
+      Set-Cookie:
+      - rack.session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRiJFZDM4MTE0MzI0YjAyMjNiZDdiNmQw%0AMzY5MzViYzc4ZmVkNzFhYWMyMTBkMDg0NDZiYmU5ODc5MmY4NDkxYjEyNkki%0AD2NzcmYudG9rZW4GOwBGSSIxR1BkMzdmUzBKbTNPUUQ4TXBPZjVza1Y4OC9B%0ALzZxZkgxdGsvbzFHU0FLQT0GOwBG%0A--433c9715c9677b90096b11e9ea8c2607e5c09d35;
+        path=/; HttpOnly; secure
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '2139'
+    body:
+      encoding: US-ASCII
+      string: ! '{"fields":[{"name":"items_id"},{"name":"items_concierge_bag_id"},{"name":"orders_id"},{"name":"items_gender"},{"name":"items_is_juniors"},{"name":"items_purchased"},{"name":"items_listed_now"},{"name":"items_listed_ever"},{"name":"items_in_inventory"},{"name":"items_no_longer_in_inventory"},{"name":"current_state_min_date"},{"name":"items_listed_date"},{"name":"items_purchased_date"},{"name":"items_price"},{"name":"items_category_id"},{"name":"items_brand_id"},{"name":"items_product_id"},{"name":"items_location"},{"name":"items_state"},{"name":"items_created_date"},{"name":"items_upfront_payout"},{"name":"items_photographer_name"},{"name":"items_photo_station_name"},{"name":"items_itemizer_name"},{"name":"items_sorter_name"},{"name":"items_views"},{"name":"items_original_item_id"},{"name":"items_new_with_tags"},{"name":"items_packer_name"},{"name":"sizings_id"},{"name":"items_quality_code"},{"name":"items_reason"},{"name":"items_refund_reason"},{"name":"item_prices_original_price"},{"name":"item_prices_msrp"}],"data":[[15.0,0.0,194529.0,"girls","No","Yes","No","Yes","No","No","2012-02-20","2012-02-07","2012-02-08",249.0,107.0,74.0,42.0,"","received","2012-04-09",0.0,null,null,null,null,30.0,null,0,null,25,"Q1",null,null,null,null],[15.0,0.0,194535.0,"girls","No","Yes","No","Yes","No","No","2012-02-20","2012-02-07","2012-02-08",249.0,107.0,74.0,42.0,"","received","2012-04-09",0.0,null,null,null,null,30.0,null,0,null,25,"Q1",null,null,null,null],[16.0,0.0,203536.0,"boys","No","Yes","No","Yes","No","No","2012-03-09","2012-02-07","2012-03-07",849.0,41.0,2424.0,54.0,"","received","2012-04-09",0.0,null,null,null,null,38.0,null,0,null,136,"Q1",null,null,null,null],[17.0,0.0,199895.0,"girls","No","Yes","No","Yes","No","No","2012-02-27","2012-02-07","2012-02-24",549.0,72.0,1101.0,48.0,"","received","2012-04-09",0.0,null,null,null,null,57.0,null,0,null,37,"Q1",null,null,null,null],[18.0,0.0,203030.0,"girls","No","Yes","No","Yes","No","No","2012-03-09","2012-01-24","2012-03-06",849.0,44.0,141.0,54.0,"","received","2012-01-17",0.0,null,null,null,null,28.0,null,0,null,36,"Q1",null,null,null,null]],"truncated":true}'
+    http_version: 
+  recorded_at: Sun, 27 Oct 2013 23:09:39 GMT
+recorded_with: VCR 2.6.0
