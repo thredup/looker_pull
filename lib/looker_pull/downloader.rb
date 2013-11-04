@@ -65,6 +65,7 @@ module LookerPull
     end
 
     def headers
+      return [] if self.data_headers.nil? || self.data_headers.count == 0
       headers = self.data_headers.map do |h|
         if self.formatter
           self.formatter.format_header(h["name"])
