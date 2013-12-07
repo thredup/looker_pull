@@ -51,7 +51,7 @@ module LookerPull
     end
 
     def format_data_rows(rows,headers)
-      rows = format_currency_fields(rows,headers)
+      rows = format_currency_fields(rows,headers) if @currency_fields
     end
 
     def format_currency_fields(rows,headers)
