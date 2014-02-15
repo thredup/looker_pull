@@ -33,7 +33,7 @@ module LookerPull
       max_rows = options[:max_rows]
 
       while continue && (!max_rows || max_rows > total_rows_count) && (!options[:single_pull] || next_id == 0)
-        self.looker_query_utility.set_paging_by_sorts_filter(next_id)  
+        self.looker_query_utility.set_paging_by_sorts_filter(next_id) if next_id > 0
         self.looker_query_utility.run
 
         self.query_result = self.looker_query_utility.result
